@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: black;
+      color: white;
+    }
+
+    .light {
+      background: white;
+      color: black;
+    }
+
+    .box {
+      border: 1px solid gray;
+      padding: 30px;
+      width: 120px;
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .nav {
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body id="page">
+
+  <button onclick="toggleMode()">Light / Dark Mode</button>
+
+  <h2>Admin Dashboard</h2>
+
+  <div class="box nav">Navigation</div>
+  <div class="box">Analytics</div>
+  <div class="box">Users</div>
+  <div class="box">Settings</div>
+
+  <script>
+    function toggleMode() {
+      document.getElementById("page").classList.toggle("light");
+    }
+  </script>
+
+</body>
+</html>
