@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="balance">Balance: $1000</h2>
+
+<input id="amount" type="number" placeholder="Enter amount"><br><br>
+
+<button onclick="deposit()">Deposit</button>
+<button onclick="withdraw()">Withdraw</button>
+
+<script>
+  let balance = 1000;
+
+  function deposit() {
+    let amt = Number(document.getElementById("amount").value);
+    balance = balance + amt;
+    document.getElementById("balance").innerText = "Balance: $" + balance;
+  }
+
+  function withdraw() {
+    let amt = Number(document.getElementById("amount").value);
+    balance = balance - amt;
+    document.getElementById("balance").innerText = "Balance: $" + balance;
+  }
+</script>
+
+</body>
+</html>
